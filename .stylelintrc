@@ -6,6 +6,10 @@
     "property-case": "lower",
     "selector-type-case": "lower",
     "no-unknown-animations":true,
+    no-misspelled-properties:
+    - 2
+    - 'extra-properties':
+          - 'osx-font-smoothing'
     "indentation": "tab",
     "selector-max-compound-selectors": 3,
     "no-duplicate-selectors": true,

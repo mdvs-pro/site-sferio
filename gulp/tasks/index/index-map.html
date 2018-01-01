@@ -32,6 +32,9 @@
       line-height: 1.6;
       font-family: 'Politica', serif;
     }
+    .header__logo {
+      padding: 20px 0 0 40px; 
+    }
     .icon-logo { width: 3.66em; height: 1em; fill: #221F20; }
     .icon-desktop { width: 1.41em; height: 1em; fill: #000; }
     .icon-link { width: 2em; height: 1em; fill: #000; }
@@ -406,9 +409,7 @@
     <path d="M20 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 12H2V2h18v10z" fill-rule="evenodd"/>
 </symbol></svg>
   <header class="header">
-    <h1><a href="http://riverco.de">
-      <svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>
-    </a></h1>
+    <h1 class="header__logo">SFERIO</h1>
     <%
 		date = new Date(_.now());
 		if(date.getMonth()+1<10){ month = '0' + (date.getMonth()+1);} 
@@ -465,7 +466,7 @@
     
     <iframe id="preview"  width="1600" height="600" src="<%= pages.PageList[0].file %>"  frameborder="0"></iframe>
     <footer>
-      <p>Coded with ❤️ at <a href="http://riverco.de">Coderiver</a></p>
+      <p>Coded with ❤️ MDVS</p>
     </footer>
   </aside>
 
@@ -586,7 +587,7 @@
 
 
 
-        console.log(scaleV,scaleH);
+        // console.log(scaleV,scaleH);
       }
 
       setIframeWidth();

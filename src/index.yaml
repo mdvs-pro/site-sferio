@@ -1,5 +1,5 @@
-ProjectTitle: miami
+ProjectTitle: Sferio
 
 PageList:
-- file: page.html
-  ready: 50
+- file: index.html
+  ready: 10
