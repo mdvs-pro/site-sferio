@@ -85,11 +85,11 @@
   background-image: linear-gradient(left, $color1, $color2)
 
 // font-family 
-=font($alias, $name)
+=font($alias, $name, $weight: 400)
   @font-face
     font-family: $alias
     src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff")
-    font-weight: normal
+    font-weight: $weight
     font-style: normal
 // to use:
 //+font(black, cytiapro-black-webfont)
