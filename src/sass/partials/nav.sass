@@ -6,3 +6,17 @@
     margin: 0 15px
   &__link
     text-decoration: none
+    color: $color_bg_light
+    &:hover
+      font-weight: 600
+    &:visited
+      color: $color_bg_light
+    &:after
+      display: block
+      content: attr(data-title)
+      font-weight: bold
+      height: 0
+      overflow: hidden
+      visibility: hidden
+  
+      

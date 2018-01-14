@@ -1,2 +1,31 @@
 .footer
-  
+  background: $color_bg
+  padding: 50px 0
+  color: $color_bg_light
+  a
+    color: $color_bg_light
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__nav
+    padding: 50px 0
+    .nav__list
+      justify-content: center
+  &__label
+    margin-right: 5px
+    margin-left: 30px
+  &__socials
+    flex: 0 0 100px //like a logo
+
+.socials
+  &__list
+    display: flex
+  &__item
+    margin: 0 10px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__link
+    font-size: 30px
