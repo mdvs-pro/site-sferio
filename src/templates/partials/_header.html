@@ -1,29 +1,35 @@
 <header class="header">
-  <div class="header__logo logo">LOGO</div> 
-  <div class="header__menu">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#capability">Возможности</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#scenario">Сценарии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#specifications">Характеристики</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#connection">Подключение</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header__additional">
-    <button class="btn" type="button" data-modal="order">Заказать</button>
-    <select name="lang" id="lang">
-      <option value="ru">Ru</option>
-      <option value="ua">Ua</option>
-      <option value="en">En</option>
-    </select>
+  <div class="container container--full">
+    <div class="header__wrapper">
+      <div class="header__logo logo">
+        <a href="#">{{mixins.icon('logo')}}</a>
+      </div>
+      <div class="header__menu">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#capability" data-title="Возможности">Возможности</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#scenario" data-title="Сценарии">Сценарии</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#specifications" data-title="Характеристики">Характеристики</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#connection" data-title="Подключение">Подключение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__additional">
+        <button class="btn" type="button" data-modal="order">Заказать</button>
+        <select name="lang" id="lang">
+          <option value="ru">Ru</option>
+          <option value="ua">Ua</option>
+          <option value="en">En</option>
+        </select>
+      </div>
+    </div>
   </div>
 </header>

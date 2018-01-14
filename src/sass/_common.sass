@@ -38,8 +38,6 @@ body
 			margin-left: 2em 
 		li
 			padding-left: 5px 
-	ol,ul
-		margin-bottom: 1em 
 .form
 	&__field
 		margin-bottom: 10px 
@@ -62,15 +60,32 @@ body
 	font-size: 14px 
 	line-height: 1  
 	display: inline-block
-	background: $color_orange
+	background: transparent
+	border: 2px solid $color_bg_light
 	text-decoration: none
 	color: #fff 
-	font-weight: 600
-	padding: 15px 40px
+	font-weight: 400
+	padding: 10px 30px
 	transition: all $time
 	&:hover
-		background: $color_bg_light
 		color: $color_orange
+		border-color: $color_orange
+	&--orange
+		font-weight: 600
+		background: $color_orange
+		padding: 15px 40px
+		border-width: 0
+		&:hover
+			background: $color_bg_light
+			color: $color_orange
 
 .img-responsive
 	max-width: 100%
+
+.container--full
+	+rmin(1200)
+		width: 1500px
+
+.icon-logo
+	width: 100px
+	height: 36px

@@ -4,7 +4,24 @@
   top: 0
   z-index: 10
   background: $color_bg
-  background: $color_bg_light
   color: $color_bg_light
-  height: 50px
-  overflow: hidden
+  padding: 15px 0
+  &__wrapper
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex-wrap: wrap
+  &__logo
+    margin-right: auto
+  &__menu
+    .nav__link
+      color: $color_bg_light
+      &:hover
+        font-weight: 600
+      &:after
+        display: block
+        content: attr(data-title)
+        font-weight: bold
+        height: 0
+        overflow: hidden
+        visibility: hidden
