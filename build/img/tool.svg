@@ -1,0 +1,7 @@
+<svg width="9" height="68" viewBox="0 0 9 68">
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <rect width="7" height="30" y="36" stroke="#979797"/>
+    <rect width="1" height="30" x="3" y="6" fill="#979797"/>
+    <polygon stroke="#979797" points="1 6 6 6 5 0 2 0"/>
+  </g>
+</svg>

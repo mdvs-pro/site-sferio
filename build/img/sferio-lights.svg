@@ -1,0 +1,14 @@
+<svg width="50" height="205" viewBox="0 0 50 205">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#979797" stroke-width="2" d="M1,156 L1,204 L49,204 L49,156 L39,156 L39,8 C39,4.13400675 35.8659932,1 32,1 L18,1 C14.1340068,1 11,4.13400675 11,8 L11,156 L1,156 Z"/>
+    <rect width="36" height="2" x="6" y="155" fill="#979797"/>
+    <g transform="translate(10 10)">
+      <rect width="30" height="5" y="130" fill="#8B8B8B"/>
+      <rect width="30" height="5" y="85" fill="#8B8B8B"/>
+      <rect width="30" height="5" y="40" fill="#8B8B8B"/>
+      <rect width="30" height="40" y="90" fill="#26C281"/>
+      <rect width="30" height="40" y="45" fill="#F7CA18"/>
+      <rect width="30" height="40" fill="#F03434"/>
+    </g>
+  </g>
+</svg>
