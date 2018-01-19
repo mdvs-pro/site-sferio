@@ -1,16 +1,35 @@
 .connection
   &__item
+    display: flex
+    align-items: center
+    justify-content: flex-start
     margin-bottom: 50px
+    cursor: pointer
+  &__item--active &__num:before
+    background: $color_bg
+  &__item--active &__caption
+    color: $color_bg
   &__tip
     font-size: 16px
     margin-top: 75px
+  &__images
+    position: relative
+    min-height: 400px
+  &__image
+    position: absolute
+    top: 0
+    left: 0 
+    transform: scale(0,0)
+    transition: transform $time
+    will-change: transform
+  &__image--active
+    transform: scale(1,1)
 
 .num-circle
   position: relative
   color: #fff
-  margin-right: 30px
-  display: inline-block
-  line-height: 0
+  margin: 0 30px 0 20px
+  line-height: 40px
   &:before
     content: ''
     display: inline-block

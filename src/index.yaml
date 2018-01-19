@@ -2,4 +2,6 @@ ProjectTitle: Sferio
 
 PageList:
 - file: index.html
-  ready: 10
+  ready: 50
+- file: order-form.html
+  ready: 50

@@ -17,7 +17,7 @@
       <header class="header">
         <div class="container container--full">
           <div class="header__wrapper">
-            <div class="header__logo logo"> <a href="#HOME">
+            <div class="header__logo logo"> <a href="/">
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 </a> </div>
             <div class="header__menu">
@@ -30,7 +30,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="header__additional"> <button class="btn" type="button" data-modal="order">Заказать</button> <select name="lang" id="lang">
+            <div class="header__additional"> <a class="btn" href="./order-form.html">Заказать</a> <select name="lang" id="lang">
           <option value="ru">Ru</option>
           <option value="ua">Ua</option>
           <option value="en">En</option>
@@ -211,21 +211,22 @@
           </div>
         </div>
       </section>
-      <section class="sc connection" id="connection">
+      <section class="sc connection js-connection-tab" id="connection">
         <div class="container">
           <h2 class="h2 sc__heading">Как подключить Sferio?</h2>
           <div class="row">
             <div class="col-sm-6 col-md-4">
               <ul class="connection__list">
-                <li class="connection__item"> <span class="num-circle">1</span> Установите устройство в электрощит </li>
-                <li class="connection__item"> <span class="num-circle">2</span> Подключите провода к клемам устройства </li>
-                <li class="connection__item"> <span class="num-circle">3</span> Подайте напряжение питания на устройство </li>
-                <li class="connection__item"> <span class="num-circle">4</span> Сконфигурируйте устройство </li>
-                <li class="connection__item"> <span class="num-circle">5</span> Настройте платформу ZABBIX </li>
+                <li class="connection__item connection__item--active"> <span class="connection__num num-circle">1</span> <span class="connection__caption">Установите устройство в электрощит</span> </li>
+                <li class="connection__item"> <span class="connection__num num-circle">2</span> <span class="connection__caption">Подключите провода к клемам устройства</span> </li>
+                <li class="connection__item"> <span class="connection__num num-circle">3</span> <span class="connection__caption">Подайте напряжение питания на устройство</span> </li>
+                <li class="connection__item"> <span class="connection__num num-circle">4</span> <span class="connection__caption">Сконфигурируйте устройство</span> </li>
+                <li class="connection__item"> <span class="connection__num num-circle">5</span> <span class="connection__caption">Настройте платформу ZABBIX</span> </li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-7 offset-md-1">
-              <div class="connection__images"> <img class="img-responsive" src="./img/step-1.png" alt="step-1"> </div>
+              <div class="connection__images"> <img class="img-responsive connection__image connection__image--active" src="./img/step-1.png" alt="step-1"> <img class="img-responsive connection__image" src="./img/step-2.png" alt="step-2"> <img class="img-responsive connection__image"
+                  src="./img/step-3.png" alt="step-3"> <img class="img-responsive connection__image" src="./img/step-4.png" alt="step-4"> <img class="img-responsive connection__image" src="./img/step-5.png" alt="step-5"> </div>
             </div>
           </div>
           <p class="connection__tip text-center">Более детальную информацию по установке Sferio вы можете найти в <a class="link" href="#">паспорте устройства.</a></p>
