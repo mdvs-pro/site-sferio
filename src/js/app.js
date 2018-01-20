@@ -1,1 +1,4 @@
-//import sayHello from './lib/sayHello.js';
+'use strict';
+import connectionTab from './lib/connectionTab.js';
+
+connectionTab.init();

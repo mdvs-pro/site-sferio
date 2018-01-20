@@ -5,13 +5,59 @@
     line-height: 0
   &__canvas
     position: relative
+    +r(767)
+      padding-bottom: 40px
+      &:before
+        content: ''
+        position: absolute
+        background: rgba(0,0,0,0.5)
+        width: 100%
+        height: 100%
+        display: inline-block
+        z-index: 0
   &__img
     width: 100%
+    +r(991)
+      height: 700px
+      object-fit: cover
+    +r(767)
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      z-index: -1
   &__heading
     position: absolute
     top: 75px
     color: $color_bg_light
     width: 100%
+    +r(767)
+      position: relative
+      top: 0
+      padding-top: 40px
+  &__text
+    position: absolute
+    top: -150px
+    left: -50px
+    line-height: 1.2
+    color: $color_bg_light
+    background: rgba(0,0,0,0.44)
+    padding: 5px
+    min-height: 1px
+    transition: all $time
+    user-select: none
+    text-align: center
+    &:hover
+      background: rgba(0,0,0,1)
+    &:after
+      content: ''
+      position: absolute
+      bottom: -4px
+      left: 54px
+      width: 1px
+      height: calc(150px - 100%)
+      border: 1px dashed $color_bg_light
+      transform: translateY(100%)
   &__tip
     position: absolute
     width: 10px
@@ -19,18 +65,82 @@
     border-radius: 50%
     background: #ffffff
     box-shadow: 0px 0px 8px 6px #333333
+    &:hover
+      z-index: 2
     &--1
       top: 69%
       left: 20.3%
+      .scenario__text
+        width: 250px
+        top: -180px
+        &:after
+          height: calc(165px - 100%)
     &--2
       top: 70.4%
       left: 27.5%
+      .scenario__text
+        width: 174px
+        top: -90px
+        &:after
+          height: calc(75px - 100%)
     &--3
       top: 70.9%
       left: 44.7%
+      .scenario__text
+        width: 330px
+        top: -200px
+        &:after
+          height: calc(185px - 100%)
     &--4
       top: 69%
       left: 66%
+      .scenario__text
+        width: 240px
+        top: -120px
+        left: -140px
+        &:after
+          left: 144px
+          height: calc(105px - 100%)
     &--5
       top: 63.2%
       left: 80.3%
+      .scenario__text
+        width: 174px
+        top: -180px
+        &:after
+          height: calc(165px - 100%)
+  &__tip
+    +r(991)
+      &--1
+        .scenario__text
+          width: 250px
+          top: -260px
+          &:after
+            height: calc(245px - 100%)
+      &--5
+        .scenario__text
+          width: 250px
+          top: -260px
+          left: -140px
+          &:after
+            left: 144px
+            height: calc(245px - 100%)
+  &__tip
+    +r(767)
+      position: relative
+      top: auto
+      left: auto
+      background: none
+      box-shadow: none
+      width: 100%
+      height: auto
+      .scenario__text
+        position: relative
+        top: auto
+        left: auto
+        width: auto
+        height: auto
+        background: none
+        margin-bottom: 10px
+        &:after
+          display: none
