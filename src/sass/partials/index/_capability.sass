@@ -3,8 +3,12 @@
     padding-bottom: 15px
   &__item
     padding-top: 100px
+    +r(767)
+      padding-top: 0
   &__add
     margin-top: 125px
+    +r(767)
+      margin-top: 40px
   &__icon-t
     display: flex
     flex-wrap: wrap
@@ -13,24 +17,46 @@
     margin-top: 50px
     .icon-t__item
       flex: 0 0 50%
+      +r(767)
+        flex: 0 0 100%
       &:nth-child(2n)
         text-align: right
+  &__secondary-h
+    +r(767)
+      text-align: left
+  &__img-c
+    +r(767)
+      order: -1
+      margin-top: 40px
+      margin-bottom: 40px
 
 .icon-t
   &__item
     margin-bottom: 65px
+    +r(767)
+      margin-bottom: 30px
   &__content
     display: inline-block
     text-align: left
+    +r(991)
+      display: flex
+      justify-content: flex-start
+      align-items: center
   &__i
     display: inline-block
     vertical-align: middle
     width: 70px
     flex: 0 0 70px
+    +r(767)
+      flex: 0 0 55px
   &__t
     display: inline-block
     vertical-align: middle
-    margin-left: 35px
-    max-width: 300px
+    +rmin(992)
+      margin-left: 35px
+      max-width: 300px
+    +r(767)
+      font-size: 16px
+      padding-left: 20px
     p
       margin-bottom: 0

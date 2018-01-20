@@ -20,39 +20,53 @@ body
 	font-family: $font
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-	h2, .h2
-		font-size: 35px 
-		line-height: 1.1
-		font-weight: normal
-		margin-bottom: 1em
-		color: $color_t
-		+r(767)
-			font-size: 30px
-	h3, .h3
-		font-size: 24px 
-		line-height: 30px
-		font-weight: bold
-		margin-bottom: 1em
-		color: $color_t
-	p
-		margin-bottom: 1em
-		font-size: 18px
-		line-height: 27px
-	a
-		color: $color_link
-		text-decoration: none
-		&:hover
-			text-decoration: underline
-		&:visited
-			color: $color_bg
-	ol
-		list-style: decimal
-		position: relative
-		left: -5px 
-		+r(720)
-			margin-left: 2em 
-		li
-			padding-left: 5px 
+h1, .h1
+	font-size: 40px 
+	line-height: 50px
+	font-weight: 600
+	color: $color_t
+	+r(767)
+		font-size: 36px
+		line-height: 46px
+h2, .h2
+	font-size: 35px 
+	line-height: 1.1
+	font-weight: normal
+	margin-bottom: 1em
+	color: $color_t
+	+r(767)
+		font-size: 30px
+h3, .h3
+	font-size: 24px 
+	line-height: 30px
+	font-weight: bold
+	margin-bottom: 1em
+	color: $color_t
+	+r(767)
+		font-size: 22px 
+		line-height: 28px
+p
+	margin-bottom: 1em
+	font-size: 18px
+	line-height: 27px
+	+r(767)
+		font-size: 16px
+		line-height: 24px
+a
+	color: $color_link
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+	&:visited
+		color: $color_bg
+ol
+	list-style: decimal
+	position: relative
+	left: -5px 
+	+r(720)
+		margin-left: 2em 
+	li
+		padding-left: 5px 
 .form
 	&__field
 		margin-bottom: 10px 

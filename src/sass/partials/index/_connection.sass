@@ -5,6 +5,8 @@
     justify-content: flex-start
     margin-bottom: 50px
     cursor: pointer
+    +r(767)
+      margin-bottom: 30px
   &__item--active &__num:before
     background: $color_bg
   &__item--active &__caption
@@ -15,6 +17,8 @@
   &__images
     position: relative
     min-height: 400px
+    +r(767)
+      min-height: 300px
   &__image
     position: absolute
     top: 0
