@@ -5,8 +5,12 @@ title: Index page
 {% block content %}
 
 {% include "partials/_header.html" %}
-
-{% include "partials/_page-header.html" %}
+<div class="order page-order">  <!--remove this div in WP -->
+  <main class="main sc sc--main">
+    {% include "partials/_page-header.html" %}
+    {% include "partials/_page-body.html" %}
+  </main>
+</div>
 
 {% include "partials/_footer.html" %}
 
