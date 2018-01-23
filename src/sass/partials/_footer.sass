@@ -8,15 +8,37 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
   &__nav
     padding: 50px 0
+    +r(991)
+      padding: 0 0 30px 0
     .nav__list
       justify-content: center
+      +r(991)
+        display: block
+        text-align: center
+    .nav__item
+      +r(991)
+        padding-bottom: 10px
   &__label
     margin-right: 5px
     margin-left: 30px
+    +r(991)
+      margin: 0
   &__socials
     flex: 0 0 100px //like a logo
+  &__info
+    +r(991)
+      order: 2
+      flex: 0 0 100%
+      padding: 40px 0
+  &__i
+    display: inline-block
+    +r(991)
+      display: block
+      padding-bottom: 10px
+      text-align: center
 
 .socials
   &__list
@@ -28,4 +50,4 @@
     &:last-child
       margin-right: 0
   &__link
-    font-size: 30px
+    font-size: 22px

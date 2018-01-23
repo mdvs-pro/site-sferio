@@ -38,22 +38,26 @@
   &__text
     position: absolute
     top: -150px
-    left: -50px
+    left: 0
     line-height: 1.2
     color: $color_bg_light
     background: rgba(0,0,0,0.44)
     padding: 5px
     min-height: 1px
+    transform: translateX(-50%)
     transition: all $time
     user-select: none
     text-align: center
+    +r(767)
+      transform: none
     &:hover
       background: rgba(0,0,0,1)
     &:after
       content: ''
       position: absolute
+      margin-left: 4px
+      left: 50%
       bottom: -4px
-      left: 54px
       width: 1px
       height: calc(150px - 100%)
       border: 1px dashed $color_bg_light
@@ -97,9 +101,7 @@
       .scenario__text
         width: 240px
         top: -120px
-        left: -140px
         &:after
-          left: 144px
           height: calc(105px - 100%)
     &--5
       top: 63.2%
@@ -121,9 +123,7 @@
         .scenario__text
           width: 250px
           top: -260px
-          left: -140px
           &:after
-            left: 144px
             height: calc(245px - 100%)
   &__tip
     +r(767)
@@ -142,5 +142,6 @@
         height: auto
         background: none
         margin-bottom: 10px
+        user-select: text
         &:after
           display: none

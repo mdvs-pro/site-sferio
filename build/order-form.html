@@ -30,7 +30,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="header__additional"> <a class="btn" href="./order-form.html">Заказать</a> <select name="lang" id="lang">
+            <div class="header__additional"> <a class="btn header__btn" href="./order-form.html">Заказать</a> <select name="lang" id="lang">
           <option value="ru">Ru</option>
           <option value="ua">Ua</option>
           <option value="en">En</option>
@@ -38,8 +38,72 @@
           </div>
         </div>
       </header>
-      <div class="page__header">
-        <h1>Гарантия</h1>
+      <div class="order page-order">
+        <!--remove this div in WP -->
+        <main class="main sc sc--main">
+          <div class="page__header sc__header text-center">
+            <div class="mw650">
+              <h1 class="h2 clr_w">Оформление заказа</h1>
+              <p class="clr_w">Чтобы заказать устройство Sferio заполните форму ниже и представитель нашей компании свяжется с вами для подтверждения заказа.</p>
+            </div>
+          </div>
+          <div class="sc">
+            <div class="container">
+              <form class="s-form">
+                <div class="order__item">
+                  <h2 class="h3 text-center order__heading">1. Конфигурация устройства</h2>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="ports" class="s-form__label">Порты контроля переменного напряжения фаз</label> <select name="ports" class="s-form__select">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+          </select> </div>
+                  <div class="s-form__group"> <label for="delivery_results" class="s-form__label">Доставка результатов измерения</label> <input type="radio" id="delivery_choise1" name="contact" value="email"> <label for="delivery_choise1">Email</label> <input type="radio" id="delivery_choise2"
+                      name="contact" value="cloud"> <label for="delivery_choise2">Облачный сервис</label> <input type="radio" id="delivery_choise3" name="contact" value="sms"> <label for="delivery_choise3">SMS</label> </div>
+                  <div class="s-form__group">
+                  <label for="additional_results" class="s-form__label">Дополнительная конфигурация<span class="s-form__tip">(необязательно)</span></label> <input type="radio" id="additional_choise1" name="contact" value="email"> <label for="additional_choise1">Датчики влажности</label>                    <input type="radio" id="additional_choise2" name="contact" value="cloud"> <label for="additional_choise2">Датчики освещенности</label> <input type="radio" id="additional_choise3" name="contact" value="sms"> <label for="additional_choise3">Датчики давления</label>                    </div>
+                </div>
+                <div class="order__item">
+                  <h2 class="h3 text-center order__heading">2. Контактная информация</h2>
+                  <div class="s-form__group"> <label for="name" class="s-form__label">Имя и фамилия</label> <input type="text" name="name" placeholder="Иван Иванов"> </div>
+                  <div class="s-form__group"> <label for="name" class="s-form__label">Имя и фамилия</label> <input type="text" name="name" placeholder="Иван Иванов"> </div>
+                  <div class="s-form__group"> <label for="name" class="s-form__label">Имя и фамилия</label> <input type="text" name="name" placeholder="Иван Иванов"> </div>
+                  <div class="s-form__group"> <label for="name" class="s-form__label">Имя и фамилия</label> <input type="text" name="name" placeholder="Иван Иванов"> </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
       </div>
       <footer class="footer">
         <div class="container container--full">
@@ -47,7 +111,10 @@
             <div class="footer__logo logo"> <a href="HOME">
 <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 </a> </div>
-            <div class="footer__info"> <span class="footer__label bold ml0">Email:</span> <a class="link" href="mailto:support@sfer.io">support@sfer.io</a> <span class="footer__label bold">Tel:</span> <a class="link" href="tel:+380937897878">+38 093 789 78 78</a> </div>
+            <div class="footer__info">
+              <div class="footer__i"> <span class="footer__label bold ml0">Email:</span> <a class="link" href="mailto:support@sfer.io">support@sfer.io</a> </div>
+              <div class="footer__i"> <span class="footer__label bold">Телефон:</span> <a class="link" href="tel:+380937897878">+38 093 789 78 78</a> </div>
+            </div>
             <div class="footer__socials socials">
               <ul class="socials__list">
                 <li class="socials__item"> <a class="socials__link" href="#fb">
