@@ -11,6 +11,7 @@ var connectionTab = {
     
     this.elemenets.each((i,el)=>{
       $(el).on('click', ()=>{this.changeTab(i)})
+      console.log($);
     });
   },
   changeTab: function(index) {
